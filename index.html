@@ -5,13 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bagażówka, usługi transportowe, przeprowadzki, transport, Trójmiasto, Gdańsk</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:700|Playfair+Display+SC|Playfair+Display:400,700"
+            rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+            integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+            crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <header class="header">
-            <div class="logo">Bagażówka</div>
-            <nav>
-                <ul class="navigation">
+        <header class="header" id="header">
+            <img src="./img/map_trojmiasto.png" alt="" class="map-troj">
+            <nav class="nav">
+                <div class="logo-section">
+                    <a href="#header" class="logo">bagazowka.eu</a>
+                    <button class="hb-button">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <ul class="nav-ul">
                     <li class="nav-item">
                         <a href="#about" class="nav-link">O nas</a>
                     </li>
@@ -25,12 +39,26 @@
                         <a href="#contact" class="nav-link">Kontakt</a>
                     </li>
                 </ul>
-                <div class="nav-toggler"></div>
             </nav>
+            <div class="header-headers">
+                <h1 class="header-h1">Przeprowadzki
+                    <br/>
+                    i transport</h1>
+                <h2 class="header-h2">w trójmieście</h2>
+            </div>
+
+            <div class="header-topic">
+                <p>Przeprowadzamy.</p>
+                <p>Transportujemy.</p>
+                <a href="#about">
+                    <button class="header-button">DOWIEDZ SIĘ WIĘCEJ</button>
+                </a>
+
+            </div>
+
         </header>
         <main>
-            <section class="about">
-                <h1>Bagażówka Trójmiasto</h1>
+            <section class="about" id="about">
                 <p>Jesteśmy w pełni świadomi tego iż każda przeprowadzka dla Ciebie jest bardzo
                     niewygodna (uciążliwa), dlatego my dostosujemy się do Twoich potrzeb jako
                     potencjalnego klienta. Nasza oferta usługi "przeprowadzka" pozwoli Tobie
@@ -68,7 +96,7 @@
                     </ul>
                 </article>
             </section>
-            <section class="offer">
+            <section class="offer" id="offer">
                 <h1>Usługi</h1>
                 <p>Dzięki naszemu wieloletniemu doświadczeniu, możemy zaoferować Państwu usługi
                     na najwyższym poziomie. Cały czas doskonalimy się i usprawniamy system
@@ -94,21 +122,26 @@
                     <li>transport innych nietypowych rzeczy</li>
                 </ul>
             </section>
-            <section class="prices">
+            <section class="prices" id="prices">
                 <h1>Cennik</h1>
+                <h2>Przeprowadzki</h2>
                 <p>W koszt ceny przeprowadzki wlicza się czas załadunku, rozładunku oraz czas
                     przejazdu między punktami( do 30km). Stawka godzinowa zależy od ilości ludzi
                     potrzebych do załadunku i rozładunku.
                 </p>
                 <div class="cennik-prze"></div>
-                <p>Cena usługi transportowej jest zależna tylko od ilości przejechanych kilometrów. </p>
+                <h2>Transport</h2>
+                <p>Cena usługi transportowej jest zależna tylko od ilości przejechanych kilometrów.
+                </p>
                 <div class="cennik-trans"></div>
             </section>
-            <section class="contact"></section>
         </main>
         <aside></aside>
-        <footer></footer>
-        <script src="js/jquery-3.3.1.min.js"></script>
+        <footer class="footer" id="contact"></footer>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -1,6 +1,7 @@
 /* MAIN */
 *, *::after, *::before {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html {
@@ -8,5 +9,29 @@ html {
 }
 
 .about, .offer, .prices {
-    padding-top: 56px;
+    padding: 35px 20px 0;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.icon {
+    width: 110px;
+    margin: 2rem auto 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: $header-font;
+}
+
+li {
+    margin-bottom: .6rem;
+    padding-right: .2rem;
 }

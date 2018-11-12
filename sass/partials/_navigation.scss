@@ -8,45 +8,45 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: $main-color;
-
+    background-color: color(main);
 
     .logo-section {
         width: 100%;
-        padding: .6rem;
+        padding: 0.9rem;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+
 
         .logo {
-            font-family: $main-font;
-            color: $light-font-color;
-            font-size: 2rem;
+            font-family: 'Montserrat';
+            color: color(light);
+            font-size: 1.4rem;
+            font-weight: 100;
             text-decoration: none;
         }
 
         .hb-button {
-            background: white;
+            background: color(light);
             border: none;
             padding: $main-padding;
             border-radius: $main-radius;
         }
     }
 
-
     .nav-ul {
         display: none;
         list-style-type: none;
         padding: 0;
-    
+
         .nav-item {
             padding: 1.2rem;
-    
+
             .nav-link {
                 text-decoration: none;
                 font-size: 1.2rem;
+                color: color(light);
             }
         }
     }
 }
-
-

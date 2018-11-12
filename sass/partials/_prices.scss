@@ -1,0 +1,39 @@
+.prices {
+    background: color(main);
+    color: color(light);
+    padding-bottom: 2rem;
+    .cennik-przep,
+    .cennik-trans {
+        text-align: center;
+        button[type='submit'] {
+            margin: 1rem;
+            border: none;
+            padding: 0.5rem 1.2rem;
+            color: color(dark);
+            background: color(light);
+            font-weight: 700;
+        }
+    }
+}
+
+input,
+select {
+    padding: 0.4rem 1.2rem;
+    color: color(dark);
+    border: none;
+    font-weight: 700;
+    width: 250px;
+    background: color(light);
+}
+
+.cena-przep,
+.cena-trans {
+    display: none;
+    background: color(light);
+    color: color(dark);
+    font-size: 1.85rem;
+    min-width: 50px;
+    padding: 0.2rem 0;
+    margin: 1rem;
+    text-align: center;
+}

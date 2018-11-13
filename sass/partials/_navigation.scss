@@ -6,46 +6,48 @@
     top: 0;
     z-index: 10;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: color(main);
+    padding: 1rem;
 
-    .logo-section {
-        width: 100%;
-        padding: 0.9rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .logo {
+        font-family: 'Montserrat';
+        color: color(light);
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
 
-
-        .logo {
-            font-family: 'Montserrat';
-            color: color(light);
-            font-size: 1.4rem;
-            font-weight: 100;
-            text-decoration: none;
-        }
-
-        .hb-button {
-            background: color(light);
-            border: none;
-            padding: $main-padding;
-            border-radius: $main-radius;
-        }
+    .hb-button {
+        background: color(light);
+        border: none;
+        padding: $main-padding;
+        border-radius: $main-radius;
     }
 
     .nav-ul {
         display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 45px;
+        background-color: color(main);
         list-style-type: none;
         padding: 0;
+        text-align: center;
 
         .nav-item {
             padding: 1.2rem;
-
+            
             .nav-link {
                 text-decoration: none;
+                text-transform: uppercase;
                 font-size: 1.2rem;
+                font-weight: 900;
                 color: color(light);
+                padding: 0 6rem;
+
             }
         }
     }

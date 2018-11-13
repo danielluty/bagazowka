@@ -1,10 +1,17 @@
+/* *** PRICES SECTION *** */
+
 .prices {
     background: color(main);
     color: color(light);
     padding-bottom: 2rem;
     .cennik-przep,
     .cennik-trans {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        outline: 2px solid color(light);
+        outline-offset: -.5rem;
+        padding: 1.3rem;
         button[type='submit'] {
             margin: 1rem;
             border: none;
@@ -12,6 +19,10 @@
             color: color(dark);
             background: color(light);
             font-weight: 700;
+        }
+        label {
+            padding: 1rem .5rem .8rem;
+            display: block;
         }
     }
 }
@@ -32,8 +43,8 @@ select {
     background: color(light);
     color: color(dark);
     font-size: 1.85rem;
-    min-width: 50px;
-    padding: 0.2rem 0;
+    width: 200px;
+    padding: 0.5rem 0;
     margin: 1rem;
     text-align: center;
 }

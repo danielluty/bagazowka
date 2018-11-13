@@ -1,5 +1,8 @@
 /* MAIN */
-*, *::after, *::before {
+
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -8,30 +11,33 @@ html {
     font-family: $main-font;
 }
 
-.about, .offer, .prices {
-    padding: 35px 20px 0;
-    font-size: 1.3rem;
+h1,
+h2,
+h3,
+h4 {
+    font-family: $header-font;
+    text-align: center;
+}
+
+section {
+    padding: 45px 20px 0;
+    font-size: 1.35rem;
+    line-height: 1.5rem;
     display: flex;
     flex-direction: column;
-}
-.icon {
-    width: 110px;
-    margin: 2rem auto 1rem;
-}
-
-h1 {
-    font-size: 1.8rem;
-}
-
-h2 {
-    font-size: 1.6rem;
-}
-
-h1, h2, h3, h4 {
-    font-family: $header-font;
+    .icon {
+        width: 110px;
+        margin: 2rem auto 1rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    li {
+        margin-bottom: .6rem;
+        padding-right: .2rem;
+    }
 }
 
-li {
-    margin-bottom: .6rem;
-    padding-right: .2rem;
-}

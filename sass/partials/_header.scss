@@ -1,41 +1,47 @@
 /* HEADER */
 
 .header {
+    background: url(../../img/map.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -100px -30px;
     width: 100%;
     height: 100vh;
     text-align: center;
+    position: relative;
     &__hero {
+        position: relative;
         padding-top: 60px;
-        &__logo {
-            width: 200px;
-        }
-        &__h1 {
-            color: color(dark);
-            font-size: 2rem;
-        }
-        &__h2 {
-            color: color(dark);
-            font-size: 1.9rem;
-            font-weight: 300;
-        }
-        &__motto {
-            font-size: 1.1rem;
+        &__header {
+            position: absolute;
+            right: .7rem;
+            &__h1 {
+                color: color(dark);
+                font-size: 1.5rem;
+            }
+            &__h2 {
+                color: color(dark);
+                font-size: 1.7rem;
+                font-weight: 300;
+            }
+            &__logo {
+                position: relative;
+                right: -1rem;
+                width: 120px;
+            }
         }
         &__button {
-            background: color(main);
+            position: relative;
+            bottom: -27rem;
+            background: color(dark);
             color: color(light);
-            font-size: 1.3rem;
-            width: 200px;
-            margin: 0 auto;
+            font-size: 1.5rem;
             padding: $main-padding;
             border: none;
             border-radius: $main-radius;
             box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .35);
             transition: transform 300ms;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
             &__logo-pic {
                 height: 30px;
                 fill: color(light);
@@ -48,5 +54,15 @@
                 outline: none;
             }
         }
+        &__motto {
+            font-size: 1.1rem;
+        }
+    }
+    &__number {
+        position: absolute;
+        top: 70%;
+        left: 5.5rem;
+        transform: rotate(30deg);
+        color: white;
     }
 }

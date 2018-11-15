@@ -1,23 +1,19 @@
-.footer {
+.contact {
+    display: flex;
+    justify-content: center;
     background: color(light);
     color: color(dark);
-
-    .contact {
-        text-align: center;
-        padding: .1rem 0 1.5rem;
-        font-size: 7vw;
-
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: color(dark);
-
-            i {
-                font-size: 2rem;
-                padding: .5rem .5rem .8rem;
-                color: color(main);
-            }
+    font-size: 2.5rem;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: color(dark);
+        padding: 2rem 1rem;
+        i {
+            font-size: 3rem;
+            padding: 0.5rem 0.5rem 0.8rem;
+            color: color(main);
         }
     }
 }

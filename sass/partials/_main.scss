@@ -5,10 +5,14 @@
 *::before {
     box-sizing: border-box;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
-html {
+b html,
+body {
     font-family: $main-font;
+    width: 100%;
 }
 
 h1,
@@ -20,14 +24,19 @@ h4 {
 }
 
 section {
-    padding: 45px 20px 0;
+
+    padding: 40px 25px;
     font-size: 1.35rem;
     line-height: 1.5rem;
     display: flex;
     flex-direction: column;
     .icon {
-        width: 110px;
-        margin: 2rem auto 1rem;
+        width: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        @media screen and (min-width: 768px) {
+            width: 120px;
+        }
     }
     h1 {
         font-size: 1.8rem;
@@ -35,9 +44,5 @@ section {
     h2 {
         font-size: 1.6rem;
     }
-    li {
-        margin-bottom: .6rem;
-        padding-right: .2rem;
-    }
+    li {}
 }
-

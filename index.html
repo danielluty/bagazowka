@@ -16,15 +16,15 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+        <!-- Navigation -->
+
+        <!-- Header  -->
         <header class="header" id="header">
-
-            <!-- Navigation -->
             <nav class="nav">
-
-                <a href="#header" class="logo">bagazowka.eu</a>
+                <a href="#header" class="nav__logo">bagazowka.eu</a>
 
                 <!-- Navigation links -->
-                <ul class="nav-ul">
+                <ul class="nav__nav-ul">
                     <li class="nav-item">
                         <a href="#about" class="nav-link">O nas</a>
                     </li>
@@ -38,150 +38,152 @@
                         <a href="#contact" class="nav-link">Kontakt</a>
                     </li>
                 </ul>
-
-                <button class="hb-button">
-                    <i class="fa fa-bars"></i>
-                </button>
             </nav>
-            <!-- Navigation End -->
-
-            <!-- Header Content -->
             <div class="header__hero">
-
-                <h1 class="header__hero__h1">Przeprowadzki
-                    <span>i transport</span>
-                </h1>
-                <h2 class="header__hero__h2">Trójmiasto</h2>
-                <img src="./img/logo-green.svg" alt="" class="header__hero__logo">
-
-                <div class="header__hero__motto">
-                    <p>Przeprowadzamy.</p>
-                    <p>Transportujemy.</p>
+                <div class="header__hero__header">
+                    <h1 class="header__hero__header__h1">Przeprowadzki
+                        <br>
+                        <span>i transport</span>
+                    </h1>
+                    <h2 class="header__hero__header__h2">Trójmiasto</h2>
+                    <img src="./img/logo-green.svg" alt="" class="header__hero__header__logo">
                 </div>
                 <a href="#about" class="header__hero__button">WIĘCEJ</a>
             </div>
-
-            <!-- Header Content End -->
-
+            <a href="tel:+48 785 587 587" class="header__number">Tel: +48 785 587 587
+            </a>
         </header>
-        <main>
 
+        <main>
             <!-- ABOUT -->
 
             <section class="about" id="about">
                 <div class="about__textbox">
-                    <h1 class="about__textbox__introduction-header">Kim jesteśmy ?</h1>
-                    <img src="./img/education.svg" alt="" class="icon">
+                    <img src="./img/education.svg" alt="" class="icon about__textbox__icon">
+                    <h1 class="about__textbox__introduction-header">Kim jesteśmy</h1>
+
                     <p>Przeprowadzki są bardzo niewygodne. Dlatego my
                         <strong>dostosujemy się do Twoich potrzeb i zagwarantujemy Ci odpoczynek</strong>
                         przy tym przedsięwzięciu.</p>
                     <p>Nasza oferta pozwoli zapomnieć o związanych z nim problemach. Odpręż się i
                         obserwuj ze spokojną głową jak wnosimy Twoją sofe na dane piętro :).</p>
-                    <article>
-                        <h1>Dlaczego my ?</h1>
-                        <ul>
-                            <li>profesjonalnie samochody przystosowane do przewozu mebli</li>
-                            <li>pracownicy z wieloletnim doświadczeniem w branży</li>
-                            <li>fachowe doradztwo podczas przygotowań oraz w czasie przeprowadzki</li>
-                            <li>pakujemy i zabezpieczamy powierzone nam mienie na czas przeprowadzki</li>
-                            <li>jesteśmy elastyczni cenowo - z nami na pewno się dogadasz</li>
-                            <li>dostarczymy materiały do pakowania, folie, koce, kartony</li>
-                        </ul>
-                    </article>
-                    <article>
-                        <h1>Co oferujemy:</h1>
-                        <ul>
-                            <li>jeżeli masz zbyt mało czasu a zależy Tobie właśnie na nim, to my zaplanujemy
-                                całą operacje przeprowadzki.</li>
-                            <li>zdemontujemy i zmontujemy meble podczas trwania przeprowadzki.</li>
-                            <li>zabezpieczymy Twoje mienie na czas transportu.</li>
-                            <li>załadunek, transport i rozładunek</li>
-                            <li>przewieziemy przedmioty nietypowe tj. fortepiany/pianina, sejfy oraz te o
-                                dużych gabarytach.</li>
-                            <li>przeprowadzki mieszkań,domów, biur, magazynów, banków, sklepów, firm, oraz
-                                inne nietypowe</li>
-                        </ul>
-                    </article>
+                    <div class="about__articles">
+                        <article>
+                            <h1>Dlaczego my:</h1>
+                            <ul>
+                                <li>profesjonalnie samochody przystosowane do przewozu mebli</li>
+                                <li>pracownicy z wieloletnim doświadczeniem w branży</li>
+                                <li>fachowe doradztwo podczas przygotowań oraz w czasie przeprowadzki</li>
+                                <li>pakujemy i zabezpieczamy powierzone nam mienie na czas przeprowadzki</li>
+                                <li>jesteśmy elastyczni cenowo - z nami na pewno się dogadasz</li>
+                                <li>dostarczymy materiały do pakowania, folie, koce, kartony</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h1>Co oferujemy:</h1>
+                            <ul>
+                                <li>jeżeli masz zbyt mało czasu to my zaplanujemy całą operacje przeprowadzki.</li>
+                                <li>zdemontujemy i zmontujemy meble podczas trwania przeprowadzki.</li>
+                                <li>zabezpieczymy Twoje mienie na czas transportu.</li>
+                                <li>załadunek, transport i rozładunek</li>
+                                <li>przewieziemy przedmioty nietypowe tj. fortepiany/pianina, sejfy oraz te o
+                                    dużych gabarytach.</li>
+                                <li>przeprowadzki mieszkań, domów, biur, magazynów, banków, sklepów, firm, oraz
+                                    inne nietypowe</li>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
-
             </section>
 
             <!-- OFFER -->
 
             <section class="offer" id="offer">
-                <img src="./img/delivery.svg" alt="" class="icon">
-                <h1>Usługi</h1>
-                <p>Dzięki naszemu wieloletniemu doświadczeniu, oferujemy usługi na najwyższym
-                    poziomie. Cały czas doskonalimy się i usprawniamy system zarządzania
-                    transportem:</p>
-                <ul>
-                    <li>na czas - bez opóźnień, o każdej porze</li>
-                    <li>na miejsce - nie boimy się odległości</li>
-                    <li>ze wszystkim - duże gabaryty nie stanowią dla nas problemu</li>
-                    <li>w cenie - elastyczny cennik gwarantuje, że Twój portfel nas polubi</li>
-                </ul>
-                <p>Oferujemy transport do 2 ton ładunku w Gdańsku, Sopocie, Gdyni oraz na
-                    terenie całego kraju a także Europy. Nasze platformy załadowcze HDS umożliwiają
-                    załadunek ciężkich towarów:
-                </p>
-                <ul>
-                    <li>transport pianin</li>
-                    <li>transport sprzętu AGD i RTV</li>
-                    <li>transport materiałów budowlanych</li>
-                    <li>transport sprzętów biurowych</li>
-                    <li>transport 8 euro-palet jednorazowo</li>
-                    <li>transport innych nietypowych rzeczy</li>
-                </ul>
+                <div class="offer__textbox">
+                    <img src="./img/delivery.svg" alt="" class="icon offer__textbox__icon">
+                    <h1 class="offer__textbox__header">Usługi</h1>
+                    <div class="offer__textbox__articles">
+                        <article>
+                            <p>Dzięki naszemu wieloletniemu doświadczeniu, oferujemy usługi na najwyższym
+                                poziomie. Cały czas doskonalimy się i usprawniamy system zarządzania
+                                transportem:</p>
+                            <ul>
+                                <li>na czas - bez opóźnień, o każdej porze</li>
+                                <li>na miejsce - nie boimy się odległości</li>
+                                <li>ze wszystkim - duże gabaryty nie stanowią dla nas problemu</li>
+                                <li>w cenie - elastyczny cennik gwarantuje, że Twój portfel nas polubi</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <p>Oferujemy transport do 2 ton ładunku w Gdańsku, Sopocie, Gdyni oraz na
+                                terenie całego kraju a także Europy. Nasze
+                                <strong>platformy załadowcze HDS</strong>
+                                umożliwiają załadunek ciężkich towarów:
+                            </p>
+                            <ul>
+                                <li>transport pianin</li>
+                                <li>transport sprzętu AGD i RTV</li>
+                                <li>transport materiałów budowlanych</li>
+                                <li>transport sprzętów biurowych</li>
+                                <li>transport 8 euro-palet jednorazowo</li>
+                                <li>transport innych nietypowych rzeczy</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
             </section>
 
             <!-- PRICES -->
 
             <section class="prices" id="prices">
-                <img src="./img/label.svg" alt="" class="icon">
+                <div class="prices__textbox">
+                    <img src="./img/label.svg" alt="" class="icon prices__textbox__icon">
+                    <h1 class="prices__textbox__header">Cennik</h1>
 
-                <h1>Cennik Transport</h1>
-                <p>Cena usługi transportowej jest zależna tylko od ilości przejechanych kilometrów.</p>
-                <form id="form-trans" class="cennik-trans">
+                    <div class="prices__textbox__forms">
 
-                    <p>Odległość między punktami w kilometrach:</p>
-                    <input type="number" id="km">
-                    <button type="submit">Oblicz</button>
-                    <div id="cenaTrans" class="cena-trans"></div>
-                </form>
+                        <div class="prices__textbox__forms__trans">
+                            <h2>Transport</h2>
+                            <p>Cena usługi transportowej jest zależna tylko od ilości przejechanych kilometrów.</p>
+                            <form id="form-trans" class="cennik-trans">
+                                <p>Odległość między punktami
+                                    <strong>(w kilometrach)</strong>:</p>
+                                <input type="number" id="km">
+                                <button type="submit">Oblicz</button>
+                                <div id="cenaTrans" class="cena-trans"></div>
+                            </form>
+                        </div>
 
-                <h1>Cennik Przeprowadzki</h1>
-                <p>W koszt ceny przeprowadzki wlicza się czas załadunku, rozładunku oraz czas
-                    przejazdu między punktami( do 30km). Stawka godzinowa zależy od ilości ludzi
-                    potrzebych do załadunku i rozładunku.</p>
+                        <div class="prices__textbox__forms__przep">
+                            <h2>Przeprowadzki</h2>
+                            <p>W koszt ceny przeprowadzki wlicza się czas załadunku, rozładunku oraz czas
+                                przejazdu między punktami( do 30km). Stawka godzinowa zależy od ilości ludzi
+                                potrzebych do załadunku i rozładunku.</p>
+                            <form id="form-przep" class="cennik-przep">
+                                <p>Czas trwania przeprowadzki
+                                    <strong>(w godzinach)</strong>:</p>
+                                <input type="number" id="hours" required>
+                                <label for="workers">Ilość pracowników:</label>
+                                <select name="pracownicy" id="workers">
+                                    <option value="70">Tylko kierowca</option>
+                                    <option value="100">Kierowca + 1</option>
+                                    <option value="130">Kierowca + 2</option>
+                                    <option value="160">Kierowca + 3</option>
+                                    <option value="190">Kierowca + 4</option>
+                                </select>
+                                <button type="submit">Oblicz</button>
+                                <div id="cenaPrzep" class="cena-przep"></div>
+                            </form>
+                        </div>
 
-                <form id="form-przep" class="cennik-przep">
-
-                    <p>Czas trwania przeprowadzki (w godzinach):</p>
-                    <input type="number" id="hours" required>
-
-                    <label for="workers">Ilość pracowników:</label>
-                    <select name="pracownicy" id="workers">
-                        <option value="70">Tylko kierowca</option>
-                        <option value="100">Kierowca + 1</option>
-                        <option value="130">Kierowca + 2</option>
-                        <option value="160">Kierowca + 3</option>
-                        <option value="190">Kierowca + 4</option>
-                    </select>
-
-                    <button type="submit">Oblicz</button>
-                    <div id="cenaPrzep" class="cena-przep"></div>
-                </form>
-
+                    </div>
+                </div>
             </section>
         </main>
         <!-- CONTACT -->
-        <footer class="footer" id="contact">
-            <div class="contact">
-                <h2>Kontakt:</h2>
-                <a href="tel:+48 785 587 587">Tel: +48 785 587 587<i class="fas fa-phone-square"></i>
-                </a>
-            </div>
-
+        <footer class="contact" id="contact">
+            <a href="tel:+48 785 587 587">Tel: +48 785 587 587<i class="fas fa-phone-square"></i>
+            </a>
         </footer>
         <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"

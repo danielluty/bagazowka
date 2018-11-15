@@ -1,53 +1,34 @@
 /* NAVIGATION */
 
 .nav {
-    width: 100%;
     position: fixed;
+    width: 100%;
+    z-index: 999;
     top: 0;
-    z-index: 10;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: color(main);
-    padding: 1rem;
-
-    .logo {
-        font-family: 'Montserrat';
+    
+    background: color(main);
+    &__logo {
+        font-size: 1.7rem;
         color: color(light);
-        font-size: 1.6rem;
-        font-weight: 500;
-        text-decoration: none;
     }
-
-    .hb-button {
-        background: color(light);
-        border: none;
-        padding: $main-padding;
-        border-radius: $main-radius;
-    }
-
-    .nav-ul {
-        display: none;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 45px;
-        background-color: color(main);
+    &__nav-ul {
+        display: flex;
+        
         list-style-type: none;
-        padding: 0;
-        text-align: center;
 
         .nav-item {
-            padding: 1.2rem;
             
             .nav-link {
+                font-size: 1rem;
                 text-decoration: none;
-                text-transform: uppercase;
-                font-size: 1.2rem;
-                font-weight: 900;
-                color: color(light);
-                padding: 0 6rem;
-
+                background: color(light);
+                color: color(main);
+                padding: .5rem;
+                margin: .3rem;
             }
         }
     }

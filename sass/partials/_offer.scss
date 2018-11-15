@@ -3,4 +3,55 @@
 .offer {
     background: color(light);
     color: color(dark);
+    
+    &__textbox {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 1rem;
+        
+        &__icon {
+            position: absolute;
+            top: -2.2rem;
+            background: color(light);
+        }
+        &__header {
+            font-size: 2.3rem;
+         
+            @media screen and (min-width: 768px) {
+         
+            }
+        }
+        &__articles {
+            width: 95%;
+            margin: 0 auto;
+            article {
+                text-align: left;
+                p {
+                    margin: 2rem 0;
+                }
+            }
+            @media screen and (min-width: 768px) {
+              
+            }
+            @media screen and (min-width: 1024px) {
+                display: flex;
+                justify-content: space-between;
+                article {
+                    width: 45%;
+            
+                }
+            }
+        }
+        @media screen and (min-width: 1024px) {
+          
+            position: relative;
+            text-align: center;
+            outline: 3px solid color(dark);
+            outline-offset: -.5rem;
+            padding: 6rem 4rem;
+       
+        }
+    }
 }

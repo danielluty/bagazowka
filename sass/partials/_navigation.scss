@@ -1,35 +1,60 @@
-/* NAVIGATION */
-
-.nav {
+.navigation {
     position: fixed;
-    width: 100%;
     z-index: 999;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    width: 100%;
+    padding: 1rem;
     background: color(main);
-    &__logo {
+    &__toggler {
+        position: absolute;
+        right: 1.2rem;
+        top: 1rem;
         font-size: 1.7rem;
         color: color(light);
-    }
-    &__nav-ul {
-        display: flex;
-        
-        list-style-type: none;
-
-        .nav-item {
-            
-            .nav-link {
-                font-size: 1rem;
-                text-decoration: none;
-                background: color(light);
-                color: color(main);
-                padding: .5rem;
-                margin: .3rem;
-            }
+        @media screen and (min-width: 600px) {
+            display: none;
         }
     }
+    &__logo {
+        font-size: 1.8rem;
+        color: color(light);
+    }
+    &__ul {
+        text-align: center;
+        list-style-type: none;
+        display: none;
+        
+        .navigation__item {
+            padding: 1.4rem 1.5rem;
+            @media screen and (min-width: 600px) {
+                display: inline-block;
+                padding: 0 .7rem;
+            }
+            @media screen and (min-width: 750px) {
+                padding: 0 1rem;
+            }
+            @media screen and (min-width: 750px) {
+                padding: 0 1.2rem;
+            }
+            .navigation__link {
+                color: color(light);
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                @media screen and (min-width: 600px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        @media screen and (min-width: 600px) {
+            display: block !important;
+        }
+    }
+    @media screen and (min-width: 600px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.shown {
+    display: block;
 }

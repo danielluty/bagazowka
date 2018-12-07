@@ -1,68 +1,58 @@
 /* HEADER */
 
 .header {
-    background: url(../../img/map.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -100px -30px;
+    background: 18% 40% / cover url("../../img/map.svg") no-repeat, color(light);
     width: 100%;
     height: 100vh;
-    text-align: center;
     position: relative;
-    &__hero {
-        position: relative;
-        padding-top: 60px;
-        &__header {
-            position: absolute;
-            right: .7rem;
-            &__h1 {
-                color: color(dark);
-                font-size: 1.5rem;
-            }
-            &__h2 {
-                color: color(dark);
-                font-size: 1.7rem;
-                font-weight: 300;
-            }
-            &__logo {
-                position: relative;
-                right: -1rem;
-                width: 120px;
-            }
-        }
-        &__button {
-            position: relative;
-            bottom: -27rem;
+
+    &__introduction {
+        color: color(dark);
+        font-size: 1.5rem;
+        text-align: right;
+        text-transform: uppercase;
+        position: absolute;
+        right: 1.9rem;
+        top: 5rem;
+        line-height: 3rem;
+        background: rgba(255, 255, 255, .7);
+        padding: 1rem;
+        border: 2px solid color(dark);
+        border-radius: 0.3rem;
+
+        a {
             background: color(dark);
             color: color(light);
-            font-size: 1.5rem;
-            padding: $main-padding;
-            border: none;
-            border-radius: $main-radius;
-            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .35);
-            transition: transform 300ms;
-            cursor: pointer;
-            &__logo-pic {
-                height: 30px;
-                fill: color(light);
-                padding-right: 0.6rem;
-            }
-            &:hover {
-                transform: scale(1.1);
-            }
-            &:focus {
-                outline: none;
+            padding: 0.5rem;
+            border: 2px solid color(light);
+        }
+
+        p {
+            margin-top: 1rem;
+            .truck {
+                width: 100px;
+                @media screen and (min-width: 900px) {
+                    width: 200px;
+                    margin-bottom: 1rem;
+                }
+                @media screen and (min-width: 1600px) {
+                    width: 300px;
+                    margin: 2rem;
+                }
             }
         }
-        &__motto {
-            font-size: 1.1rem;
+        @media screen and (min-width: 750px) {
+            text-align: center;
+            right: 8rem;
+            top: 7rem;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 2rem;
+            padding: 2rem;
+        }
+        @media screen and (min-width: 1600px) {
+            font-size: 3rem;
         }
     }
-    &__number {
-        position: absolute;
-        top: 70%;
-        left: 5.5rem;
-        transform: rotate(30deg);
-        color: white;
-    }
+
 }

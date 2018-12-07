@@ -1,18 +1,32 @@
 /* Navigation */
-
 $(function () {
+    $('#toggler')
+        .click(function () {
+            if ($(window).innerWidth() < 600) {
+                $('#js-nav').slideToggle(200);
+            }
+        });
 
-    // Nav toggler
+    $('.navigation__link').click(function () {
+        if ($(window).innerWidth() < 600) {
+            $('#js-nav').slideUp(200);
+        } 
+    });
 
-    // Smooth scrolling
-
+    $('.navigation__logo').click(function () {
+        if ($(window).innerWidth() < 600) {
+            $('#js-nav').slideUp(200);
+        } 
+    });
 });
+
+// Smooth scrolling
 
 /* *** Cennik Transportow *** */
 
 let formTrans = document.getElementById('form-trans');
 
-formTrans.addEventListener('submit', e => {
+formTrans.addEventListener('submit', (e) => {
     e.preventDefault();
 
     let cena = 0;
@@ -25,20 +39,19 @@ formTrans.addEventListener('submit', e => {
     if (km > 0 && km < 10000) {
         km = km - 3;
         cena = km * 5 + 50;
-        poleCena.style = 'display: block;'
+        poleCena.style = 'display: block;';
         cenaTrans.innerHTML = `${cena} zł`;
-
     } else {
         cenaTrans.innerHTML = 'Podaj poprawną wartość';
         km = 0;
     }
-})
+});
 
 /* *** Cennik Przeprowadzek *** */
 
 const formPrzep = document.getElementById('form-przep');
 
-formPrzep.addEventListener('submit', e => {
+formPrzep.addEventListener('submit', (e) => {
     e.preventDefault();
 
     let cena = 0;
@@ -53,6 +66,6 @@ formPrzep.addEventListener('submit', e => {
 
     cena = hours * workers;
 
-    poleCena.style = 'display: block;'
+    poleCena.style = 'display: block;';
     cenaPrzep.innerHTML = `${cena} zł`;
-})
+});

@@ -420,10 +420,14 @@ template {
   margin: 0;
   padding: 0; }
 
-b html,
+html,
 body {
   font-family: "Lato", serif;
   width: 100%; }
+  @media screen and (min-width: 1024px) {
+    html,
+    body {
+      font-size: 1.2rem; } }
 
 h1,
 h2,
@@ -433,7 +437,7 @@ h4 {
   text-align: center; }
 
 section {
-  padding: 55px 25px 10px;
+  padding: 120px 25px 20px;
   font-size: 1.35rem;
   line-height: 1.5rem;
   display: -webkit-box;
@@ -444,119 +448,133 @@ section {
   -ms-flex-direction: column;
   flex-direction: column; }
   section .icon {
-    width: 100px;
+    position: absolute;
+    top: -3rem;
+    padding: 0 1rem;
+    width: 130px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
     @media screen and (min-width: 768px) {
       section .icon {
-        width: 120px; } }
+        width: 120px;
+        top: -2rem; } }
   section h1 {
     font-size: 1.8rem; }
   section h2 {
     font-size: 1.6rem; }
+  @media screen and (min-width: 1200px) {
+    section {
+      min-height: 100vh; } }
 
 /* HEADER */
 .header {
-  background: url(../../img/map.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -100px -30px;
+  background: 18% 40%/cover url("../../img/map.svg") no-repeat, #f4f4f9;
   width: 100%;
   height: 100vh;
-  text-align: center;
   position: relative; }
-  .header__hero {
-    position: relative;
-    padding-top: 60px; }
-    .header__hero__header {
-      position: absolute;
-      right: .7rem; }
-      .header__hero__header__h1 {
-        color: #455848;
-        font-size: 1.5rem; }
-      .header__hero__header__h2 {
-        color: #455848;
-        font-size: 1.7rem;
-        font-weight: 300; }
-      .header__hero__header__logo {
-        position: relative;
-        right: -1rem;
-        width: 120px; }
-    .header__hero__button {
-      position: relative;
-      bottom: -27rem;
-      background: #455848;
-      color: #F4F4F9;
-      font-size: 1.5rem;
-      padding: 0.7rem 3rem;
-      border: none;
-      border-radius: 0.1rem;
-      -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.35);
-      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.35);
-      -webkit-transition: -webkit-transform 300ms;
-      transition: -webkit-transform 300ms;
-      -o-transition: transform 300ms;
-      transition: transform 300ms;
-      transition: transform 300ms, -webkit-transform 300ms;
-      cursor: pointer; }
-      .header__hero__button__logo-pic {
-        height: 30px;
-        fill: #F4F4F9;
-        padding-right: 0.6rem; }
-      .header__hero__button:hover {
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
-      .header__hero__button:focus {
-        outline: none; }
-    .header__hero__motto {
-      font-size: 1.1rem; }
-  .header__number {
+  .header__introduction {
+    color: #455848;
+    font-size: 1.5rem;
+    text-align: right;
+    text-transform: uppercase;
     position: absolute;
-    top: 70%;
-    left: 5.5rem;
-    -webkit-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    transform: rotate(30deg);
-    color: white; }
+    right: 1.9rem;
+    top: 5rem;
+    line-height: 3rem;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border: 2px solid #455848;
+    border-radius: 0.3rem; }
+    .header__introduction a {
+      background: #455848;
+      color: #f4f4f9;
+      padding: 0.5rem;
+      border: 2px solid #f4f4f9; }
+    .header__introduction p {
+      margin-top: 1rem; }
+      .header__introduction p .truck {
+        width: 100px; }
+        @media screen and (min-width: 900px) {
+          .header__introduction p .truck {
+            width: 200px;
+            margin-bottom: 1rem; } }
+        @media screen and (min-width: 1600px) {
+          .header__introduction p .truck {
+            width: 300px;
+            margin: 2rem; } }
+    @media screen and (min-width: 750px) {
+      .header__introduction {
+        text-align: center;
+        right: 8rem;
+        top: 7rem; } }
+    @media screen and (min-width: 1200px) {
+      .header__introduction {
+        font-size: 2rem;
+        padding: 2rem; } }
+    @media screen and (min-width: 1600px) {
+      .header__introduction {
+        font-size: 3rem; } }
 
-/* NAVIGATION */
-.nav {
+.navigation {
   position: fixed;
-  width: 100%;
   z-index: 999;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  width: 100%;
+  padding: 1rem;
   background: #4a9328; }
-  .nav__logo {
+  .navigation__toggler {
+    position: absolute;
+    right: 1.2rem;
+    top: 1rem;
     font-size: 1.7rem;
-    color: #F4F4F9; }
-  .nav__nav-ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style-type: none; }
-    .nav__nav-ul .nav-item .nav-link {
-      font-size: 1rem;
-      text-decoration: none;
-      background: #F4F4F9;
-      color: #4a9328;
-      padding: .5rem;
-      margin: .3rem; }
+    color: #f4f4f9; }
+    @media screen and (min-width: 600px) {
+      .navigation__toggler {
+        display: none; } }
+  .navigation__logo {
+    font-size: 1.8rem;
+    color: #f4f4f9; }
+  .navigation__ul {
+    text-align: center;
+    list-style-type: none;
+    display: none; }
+    .navigation__ul .navigation__item {
+      padding: 1.4rem 1.5rem; }
+      @media screen and (min-width: 600px) {
+        .navigation__ul .navigation__item {
+          display: inline-block;
+          padding: 0 .7rem; } }
+      @media screen and (min-width: 750px) {
+        .navigation__ul .navigation__item {
+          padding: 0 1rem; } }
+      @media screen and (min-width: 750px) {
+        .navigation__ul .navigation__item {
+          padding: 0 1.2rem; } }
+      .navigation__ul .navigation__item .navigation__link {
+        color: #f4f4f9;
+        font-size: 1.4rem;
+        text-transform: uppercase; }
+        @media screen and (min-width: 600px) {
+          .navigation__ul .navigation__item .navigation__link {
+            font-size: 1.2rem; } }
+    @media screen and (min-width: 600px) {
+      .navigation__ul {
+        display: block !important; } }
+  @media screen and (min-width: 600px) {
+    .navigation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+.shown {
+  display: block; }
 
 .contact {
   display: -webkit-box;
@@ -565,7 +583,7 @@ section {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #F4F4F9;
+  background: #f4f4f9;
   color: #455848;
   font-size: 2.5rem; }
   .contact a {
@@ -588,7 +606,7 @@ section {
 /* *** ABOUT SECTION *** */
 .about {
   background: #4a9328;
-  color: #F4F4F9; }
+  color: #f4f4f9; }
   .about__textbox {
     position: relative;
     display: -webkit-box;
@@ -601,9 +619,9 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    outline: 3px solid #F4F4F9;
+    outline: 3px solid #f4f4f9;
     outline-offset: -.5rem;
-    padding: 6rem 2.5rem 2rem; }
+    padding: 6rem 2rem 2rem 3rem; }
     .about__textbox__introduction-header {
       font-size: 2rem; }
     .about__textbox__icon {
@@ -656,7 +674,7 @@ section {
 
 /* *** OFFER SECTION *** */
 .offer {
-  background: #F4F4F9;
+  background: #f4f4f9;
   color: #455848; }
   .offer__textbox {
     position: relative;
@@ -670,25 +688,38 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 5rem 1rem; }
+    padding-top: 3rem; }
     .offer__textbox__icon {
-      position: absolute;
-      top: -2.2rem;
-      background: #F4F4F9; }
+      background: #f4f4f9; }
     .offer__textbox__header {
       font-size: 2.3rem; }
     .offer__textbox__articles {
-      width: 95%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
       .offer__textbox__articles article {
         text-align: left; }
         .offer__textbox__articles article p {
           margin: 2rem 0; }
+        .offer__textbox__articles article ul {
+          width: 80%;
+          margin: 0 auto; }
+          .offer__textbox__articles article ul li {
+            margin-bottom: .3rem; }
       @media screen and (min-width: 1024px) {
         .offer__textbox__articles {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
           -webkit-box-pack: justify;
           -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -705,21 +736,33 @@ section {
 /* *** PRICES SECTION *** */
 .prices {
   background: #4a9328;
-  color: #F4F4F9;
+  color: #f4f4f9;
   text-align: center; }
   .prices__textbox {
-    position: relative; }
+    position: relative;
+    padding-top: 5rem; }
     .prices__textbox__icon {
       position: absolute;
       top: -2rem;
       background: #4a9328; }
     .prices__textbox__header {
-      font-size: 2.3rem;
-      margin-top: 5rem; }
-      @media screen and (min-width: 768px) {
-        .prices__textbox__header {
-          margin-top: 7rem; } }
-    .prices__textbox__forms {
+      font-size: 2.3rem; }
+    .prices__textbox__forms__trans {
+      margin: 2rem 0; }
+      .prices__textbox__forms__trans h2 {
+        margin-bottom: 1rem; }
+      @media screen and (min-width: 1024px) {
+        .prices__textbox__forms__trans {
+          width: 45%; } }
+    .prices__textbox__forms__przep {
+      margin: 2rem 0; }
+      .prices__textbox__forms__przep h2 {
+        margin-bottom: 1rem; }
+      @media screen and (min-width: 1024px) {
+        .prices__textbox__forms__przep {
+          width: 50%; } }
+    .prices__textbox__forms .cennik-przep,
+    .prices__textbox__forms .cennik-trans {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -727,78 +770,61 @@ section {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      .prices__textbox__forms__trans {
-        margin: 2rem 0; }
-        .prices__textbox__forms__trans h2 {
-          margin-bottom: 1rem; }
-        @media screen and (min-width: 1024px) {
-          .prices__textbox__forms__trans {
-            width: 40%; } }
-      .prices__textbox__forms__przep {
-        margin: 2rem 0 0; }
-        .prices__textbox__forms__przep h2 {
-          margin-bottom: 1rem; }
-        @media screen and (min-width: 1024px) {
-          .prices__textbox__forms__przep {
-            width: 58%; } }
-      .prices__textbox__forms .cennik-przep,
-      .prices__textbox__forms .cennik-trans {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      outline: 2px solid #f4f4f9;
+      outline-offset: -.5rem;
+      margin: 2rem 0 0;
+      padding: 2rem 1rem; }
+      .prices__textbox__forms .cennik-przep button[type='submit'],
+      .prices__textbox__forms .cennik-trans button[type='submit'] {
+        border: none;
+        padding: 0.5rem 1.2rem;
+        color: #455848;
+        background: #f4f4f9;
+        font-weight: 700; }
+      .prices__textbox__forms .cennik-przep label,
+      .prices__textbox__forms .cennik-trans label {
+        display: block; }
+      .prices__textbox__forms .cennik-przep input,
+      .prices__textbox__forms .cennik-przep select,
+      .prices__textbox__forms .cennik-trans input,
+      .prices__textbox__forms .cennik-trans select {
+        margin: 2rem 0;
+        color: #455848;
+        border: none;
+        font-weight: 700;
+        width: 250px;
+        background: #f4f4f9;
+        padding: .5rem; }
+      .prices__textbox__forms .cennik-przep .cena-przep,
+      .prices__textbox__forms .cennik-przep .cena-trans,
+      .prices__textbox__forms .cennik-trans .cena-przep,
+      .prices__textbox__forms .cennik-trans .cena-trans {
+        display: none;
+        background: #f4f4f9;
+        color: #455848;
+        font-size: 1.85rem;
+        width: 200px;
+        text-align: center;
+        margin-top: 1rem;
+        padding: .5rem 1rem; }
+      @media screen and (min-width: 1024px) {
+        .prices__textbox__forms .cennik-przep,
+        .prices__textbox__forms .cennik-trans {
+          margin-top: 3.5rem; } }
+    @media screen and (min-width: 1024px) {
+      .prices__textbox__forms {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        outline: 2px solid #F4F4F9;
-        outline-offset: -.5rem;
-        margin: 2rem 0;
-        padding: 2rem 0; }
-        .prices__textbox__forms .cennik-przep button[type='submit'],
-        .prices__textbox__forms .cennik-trans button[type='submit'] {
-          border: none;
-          padding: 0.5rem 1.2rem;
-          color: #455848;
-          background: #F4F4F9;
-          font-weight: 700; }
-        .prices__textbox__forms .cennik-przep label,
-        .prices__textbox__forms .cennik-trans label {
-          display: block; }
-        .prices__textbox__forms .cennik-przep input,
-        .prices__textbox__forms .cennik-przep select,
-        .prices__textbox__forms .cennik-trans input,
-        .prices__textbox__forms .cennik-trans select {
-          margin: 2rem 0;
-          color: #455848;
-          border: none;
-          font-weight: 700;
-          width: 250px;
-          background: #F4F4F9;
-          padding: .5rem; }
-        .prices__textbox__forms .cennik-przep .cena-przep,
-        .prices__textbox__forms .cennik-przep .cena-trans,
-        .prices__textbox__forms .cennik-trans .cena-przep,
-        .prices__textbox__forms .cennik-trans .cena-trans {
-          display: none;
-          background: #F4F4F9;
-          color: #455848;
-          font-size: 1.85rem;
-          width: 200px;
-          text-align: center; }
-      @media screen and (min-width: 1024px) {
-        .prices__textbox__forms {
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-          flex-direction: row;
-          margin: 0 2rem; } }
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .prices__textbox__forms p {
+          height: 70px; } }
     @media screen and (min-width: 1024px) {
       .prices__textbox {
-        outline: 3px solid #F4F4F9;
+        outline: 3px solid #f4f4f9;
         outline-offset: -.5rem; } }
